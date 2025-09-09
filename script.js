@@ -5,7 +5,7 @@ const initialDummyData = [
         name: "프리미엄 무선 이어폰",
         price: 120000,
         quantity: 1,
-        imageUrl: "https://images.unsplash.com/photo-1505740420928-5e560c06f2ae?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // 실제 무선 이어폰 이미지 URL
+        imageUrl: "https://ae01.alicdn.com/kf/S74d88e1819cd4378809d4cd70f992cea4/S23-S23-s22-TWS-5-0.jpg_Q90.jpg_.webp", // 실제 무선 이어폰 이미지 URL
         isSelected: true,
     },
     {
@@ -13,7 +13,7 @@ const initialDummyData = [
         name: "고속 충전 보조배터리",
         price: 35000,
         quantity: 2,
-        imageUrl: "https://images.unsplash.com/photo-1628126021175-690a6e0cfd17?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // 실제 보조배터리 이미지 URL
+        imageUrl: "https://ecimg.cafe24img.com/pg318b10298575043/vova123/web/product/big/20230720/a7b3a4f9edf01480dbddcbeb2b9c49ac.png", // 실제 보조배터리 이미지 URL
         isSelected: false,
     },
     {
@@ -21,7 +21,7 @@ const initialDummyData = [
         name: "인체공학 무선 마우스",
         price: 25000,
         quantity: 1,
-        imageUrl: "https://images.unsplash.com/photo-1616788939611-667793d9a74b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // 실제 무선 마우스 이미지 URL
+        imageUrl: "https://blog.kakaocdn.net/dn/er0SnU/btszU3gpx12/Kw36RHbd1vtvv2ucgTUBH1/img.jpg", // 실제 무선 마우스 이미지 URL
         isSelected: true,
     },
 ];
