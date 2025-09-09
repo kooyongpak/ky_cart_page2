@@ -5,7 +5,7 @@ const initialDummyData = [
         name: "프리미엄 무선 이어폰",
         price: 120000,
         quantity: 1,
-        imageUrl: "https://picsum.photos/id/10/80/80",
+        imageUrl: "https://i.ibb.co/S07w25R/wireless-earbuds.jpg", // 업데이트된 이미지 URL
         isSelected: true,
     },
     {
@@ -13,7 +13,7 @@ const initialDummyData = [
         name: "고속 충전 보조배터리",
         price: 35000,
         quantity: 2,
-        imageUrl: "https://picsum.photos/id/19/80/80",
+        imageUrl: "https://i.ibb.co/S07w25R/wireless-earbuds.jpg", // 업데이트된 이미지 URL
         isSelected: false,
     },
     {
@@ -21,7 +21,7 @@ const initialDummyData = [
         name: "인체공학 무선 마우스",
         price: 25000,
         quantity: 1,
-        imageUrl: "https://picsum.photos/id/20/80/80",
+        imageUrl: "https://i.ibb.co/S07w25R/wireless-earbuds.jpg", // 업데이트된 이미지 URL
         isSelected: true,
     },
 ];
