@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.select-all-checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.select-all-checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.delete-selected-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.delete-selected-btn:hover {
+    background-color: #c82333;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.item-checkbox {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.item-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+}
+
+.item-details .price {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* 우측 정렬 */
+    flex-shrink: 0;
+}
+
+.quantity-control button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-control button:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity-control input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    -moz-appearance: textfield; /* Firefox에서 숫자 입력 필드의 스피너 제거 */
+}
+
+.quantity-control input::-webkit-outer-spin-button,
+.quantity-control input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari에서 숫자 입력 필드의 스피너 제거 */
+    margin: 0;
+}
+
+
+.cart-summary {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 1.1em;
+}
+
+.total-payment {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #007bff;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+.order-btn {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.order-btn:hover {
+    background-color: #0056b3;
+}
+
+/* --- 반응형 디자인 --- */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .cart-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .delete-selected-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .item-checkbox {
+        order: 0; /* 체크박스를 맨 앞으로 */
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .item-image {
+        order: 1; /* 이미지 다음 */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .item-details {
+        order: 2; /* 상세 정보 다음 */
+        width: 100%;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .quantity-control {
+        order: 3; /* 수량 조절 마지막 */
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .quantity-control button {
+        padding: 8px 12px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .quantity-control input {
+        width: 50px;
+        padding: 8px 0;
+    }
+
+    .summary-row, .total-payment {
+        font-size: 1em;
+    }
+
+    .order-btn {
+        padding: 12px 15px;
+        font-size: 1.1em;
+    }
+}

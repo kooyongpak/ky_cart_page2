@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 장바구니</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>나의 장바구니</h1>
+        <div class="cart-header">
+            <label class="select-all-checkbox-container">
+                <input type="checkbox" id="selectAllCheckbox">
+                <span>전체 선택</span>
+            </label>
+            <button class="delete-selected-btn">선택 상품 삭제</button>
+        </div>
+        
+        <div id="cartItems" class="cart-items">
+            <!-- 장바구니 상품 목록이 여기에 렌더링됩니다. -->
+        </div>
+
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>상품 금액 합계</span>
+                <span id="selectedItemsTotal">0원</span>
+            </div>
+            <div class="summary-row">
+                <span>배송비</span>
+                <span id="shippingFee">0원</span>
+            </div>
+            <div class="summary-row total-payment">
+                <span>총 결제 금액</span>
+                <span id="totalPayment">0원</span>
+            </div>
+            <button class="order-btn">주문하기</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
